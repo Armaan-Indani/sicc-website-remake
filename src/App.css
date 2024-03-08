@@ -1,18 +1,10 @@
 @keyframes animatedBackground {
   0% {
-    background-position: 0 0;
-  }
-  25% {
-    background-position: 25% 0;
-  }
-  50% {
-    background-position: 50% 0;
-  }
-  75% {
-    background-position: 75% 0;
+    background-size: 100%;
   }
   100% {
-    background-position: 100% 0;
+    background-size: 120%;
+    background-position: 50% 70%;
   }
 }
 
@@ -26,7 +18,12 @@ body::-webkit-scrollbar {
 
 body {
   height: 100vh;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
+  overflow-y: scroll;
+  scroll-timeline: --squareTimeline y;
+  /* Firefox supports the older "vertical" syntax */
+  scroll-timeline: --squareTimeline vertical;
+  /* position: relative; */
 }
 
 .App-header {
@@ -38,8 +35,8 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  position: fixed;
-  width: 100vw;
+  position: sticky;
+  width: calc(100vw - 1rem);
   box-shadow: 0px 0px 7px;
 }
 
@@ -48,10 +45,10 @@ body {
   color: white;
 }
 
-.cooking-img-div {
-  height: 70vh;
+.cooking-text-div {
+  height: calc(100vh - 4vw - 2rem);
   width: 98vw;
-  margin: 0px 1vw;
+  margin: 1vw 1vw;
   background-position: center;
   background-size: cover;
   background-image: url(./assets/images/cooking-board.jpg);
@@ -60,12 +57,16 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  animation: animatedBackground 5s infinite linear;
-  background-repeat: repeat-x;
+  /* animation: animatedBackground 5s ease-out 1 forwards; */
+  animation-name: animatedBackground;
+  animation-duration: 1ms; /* Firefox requires this to apply the animation */
+  animation-timeline: --squareTimeline;
+  border-radius: 20px/10px;
+  background-repeat:no-repeat;
+  z-index: -1;
 }
 
-
-.cooking-img-div h1 {
+.cooking-text-div h1 {
   color: white;
   margin: 0;
   font-size: 3rem;
@@ -75,7 +76,7 @@ body {
   font-style: normal;
 }
 
-.cooking-img-div p {
+.cooking-text-div p {
   color: white;
   margin-top: 2rem;
   font-size: 1.1rem;
@@ -90,6 +91,7 @@ body {
   font-size: larger;
   padding: 5px 20px;
   border: 2px solid white;
+  width: max-content;
 }
 
 .transparent-bg-button:hover {
@@ -110,15 +112,15 @@ body {
   margin: 50px 100px;
 }
 
-.hero img{
+.hero img {
   aspect-ratio: 1/1;
-  height:20rem;
+  height: 20rem;
   align-self: center;
   object-fit: contain;
   margin-right: 140px;
 }
 
-.hero p{
+.hero p {
   font-family: "Merriweather", serif;
   font-weight: 300;
   font-style: italic;
