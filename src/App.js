@@ -1,7 +1,11 @@
 import "./App.css";
 import Header from "./Header";
 import MyButton from "./MyButton";
-import Hero from "./hero-section";
+import Hero from "./HeroSection";
+import Message from "./Message";
+import cookingpan from "./assets/images/cooking-pan.jpg";
+import indianthaliimg from "./assets/images/indian-thali.jpg";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -15,6 +19,16 @@ function App() {
           <MyButton text={"Sign Up"} link={""} />
         </div>
         <Hero />
+        <Message
+          text={
+            "“It brings me immense joy to extend a warm invitation to all of you, passionate cooks and budding chefs alike, to come and embark on a delightful journey of vegetarian culinary excellence.”"
+          }
+        />
+        <div className="parralax-div">
+          <img src={cookingpan} alt="" className="cooking-pan-img" />
+          {/* <img src={indianthaliimg} alt="" className="indian-thali-img" /> */}
+        </div>
+        <Footer></Footer>
       </body>
     </div>
   );
