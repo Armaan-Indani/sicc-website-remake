@@ -3,7 +3,7 @@ export default function Header() {
     <header className="App-header">
       <a href="./">Home</a>
       <a href="">Our Cookery Courses</a>
-      <a href="">About Us</a>
+      <a href="./about">About Us</a>
       <a href="">FAQs</a>
       <a href="">Books</a>
       <a href="">Contact</a>

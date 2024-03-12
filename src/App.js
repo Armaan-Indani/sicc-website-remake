@@ -4,7 +4,6 @@ import MyButton from "./MyButton";
 import Hero from "./HeroSection";
 import Message from "./Message";
 import cookingpan from "./assets/images/cooking-pan.jpg";
-import indianthaliimg from "./assets/images/indian-thali.jpg";
 import Footer from "./Footer";
 
 function App() {
