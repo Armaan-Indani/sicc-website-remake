@@ -1,11 +1,13 @@
-import sicc from "./assets/images/sicc.png";
-import instagramlogo from "./assets/images/instagram-logo.png";
-import facebooklogo from "./assets/images/facebook-logo.png";
-import youtubelogo from "./assets/images/youtube-logo.png";
-import whatsapplogo from "./assets/images/whatsapp-logo.png";
+import sicc from "../assets/images/sicc.png";
+import instagramlogo from "../assets/images/instagram-logo.png";
+import facebooklogo from "../assets/images/facebook-logo.png";
+import youtubelogo from "../assets/images/youtube-logo.png";
+import whatsapplogo from "../assets/images/whatsapp-logo.png";
+import "./Footer.css";
+
 export default function Footer() {
   return (
-    <div className="contact-section">
+    <div className="contact-section" id="contact-us">
       <img src={sicc} alt="" height={"220rem"} />
       <div className="add-email">
         <h3 style={{ marginBottom: "5px" }}>ADDRESS:</h3>
@@ -23,7 +25,7 @@ export default function Footer() {
         </a>
       </div>
       <div className="follow-us">
-        <h3>Follow Us:</h3>
+        <h3>Connect with us:</h3>
         <div className="socials-images">
           <a href="https://www.instagram.com/shobhaindani/">
             <img
@@ -31,6 +33,9 @@ export default function Footer() {
               alt=""
               className="contact-logo instagram"
             />
+          </a>
+          <a href="https://wa.me/+919850580183">
+            <img src={whatsapplogo} alt="" className="contact-logo whatsapp" />
           </a>
           <a href="https://www.youtube.com/@shobhaindani984">
             <img

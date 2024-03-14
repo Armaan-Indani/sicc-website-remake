@@ -1,11 +1,11 @@
 import "./About.css";
-import shobhaimg from "./assets/images/shobhaindani.jpg";
-import mitalimg from "./assets/images/mitalindani.jpg";
-import anuimg from "./assets/images/anuradhaindani.jpg";
+import shobhaimg from "../assets/images/shobhaindani.jpg";
+import mitalimg from "../assets/images/mitalindani.jpg";
+import anuimg from "../assets/images/anuradhaindani.jpg";
 
 export default function About() {
   return (
-    <div className="aboutBody">
+    <div className="aboutBody" id="about">
       <div className="heading">
         <h1>About your instructors!</h1>
       </div>

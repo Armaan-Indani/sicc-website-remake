@@ -1,32 +1,26 @@
 import "./App.css";
-import Header from "./Header";
-import MyButton from "./MyButton";
-import Hero from "./HeroSection";
-import Message from "./Message";
-import cookingpan from "./assets/images/cooking-pan.jpg";
-import Footer from "./Footer";
+import NavBar from "./components/NavBar";
+import Hero from "./components/HeroSection";
+import Message from "./components/Message";
+import Footer from "./components/Footer";
+import FirstImpression from "./components/FirstImpression";
+import ParallaxDiv from "./components/ParallaxDiv";
+import About from "./components/About";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <NavBar />
       <body>
-        <div className="cooking-text-div">
-          <h1>DISCOVER THE WORLD OF</h1>
-          <h1>FUSION COOKING</h1>
-          <p>UNRAVEL THE WONDERS OF VEGETARIAN COOKING WITH US!</p>
-          <MyButton text={"Sign Up"} link={""} />
-        </div>
+        <FirstImpression />
         <Hero />
         <Message
           text={
             "“It brings me immense joy to extend a warm invitation to all of you, passionate cooks and budding chefs alike, to come and embark on a delightful journey of vegetarian culinary excellence.”"
           }
         />
-        <div className="parralax-div">
-          <img src={cookingpan} alt="" className="cooking-pan-img" />
-          {/* <img src={indianthaliimg} alt="" className="indian-thali-img" /> */}
-        </div>
+        <ParallaxDiv />
+        <About />
         <Footer></Footer>
       </body>
     </div>

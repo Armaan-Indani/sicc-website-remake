@@ -1,0 +1,40 @@
+.contact-section {
+  position: relative;
+  z-index: 1;
+  background-color: black;
+  height: max-content;
+  padding: 4rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: larger;
+  /* bottom: 0px; */
+}
+
+.socials-images {
+  display: flex;
+  width: 15rem;
+  justify-content: space-between;
+}
+
+.contact-logo {
+  background-color: white;
+  border: 2px solid white;
+  object-fit: scale-down;
+  border-radius: 20%;
+  height: 3rem;
+}
+
+.youtube:hover {
+  background-color: red;
+}
+.instagram:hover {
+  background-image: linear-gradient(120deg, #f9ce34, #ee2a7b, #6228d7);
+}
+.facebook:hover {
+  background-color: #316ff6;
+}
+.whatsapp:hover {
+  background-color: #075e54;
+}
