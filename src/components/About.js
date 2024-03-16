@@ -2,8 +2,30 @@ import "./About.css";
 import shobhaimg from "../assets/images/shobhaindani.jpg";
 import mitalimg from "../assets/images/mitalindani.jpg";
 import anuimg from "../assets/images/anuradhaindani.jpg";
+import { useEffect } from "react";
 
 export default function About() {
+  useEffect(() => {
+    const person_imgs = document.querySelectorAll(".person-picture");
+    console.log(person_imgs);
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        } else {
+          entry.target.classList.remove("visible");
+        }
+      });
+    });
+
+    person_imgs.forEach((img) => {
+      observer.observe(img);
+    });
+
+    observer.observe(person_imgs[0]);
+  }, []);
+
   return (
     <>
       <div className="heading" id="about">
@@ -14,7 +36,7 @@ export default function About() {
           <div className="img-holder">
             <img
               src={shobhaimg}
-              className="person-picture"
+              className="person-picture shobha-img"
               alt="Shobha Indani"
             />
           </div>
@@ -49,7 +71,11 @@ export default function About() {
             </p>
           </div>
           <div className="img-holder">
-            <img src={mitalimg} className="person-picture" alt="Mital Indani" />
+            <img
+              src={mitalimg}
+              className="person-picture mital-img"
+              alt="Mital Indani"
+            />
           </div>
         </div>
 
@@ -57,7 +83,7 @@ export default function About() {
           <div className="img-holder">
             <img
               src={anuimg}
-              className="person-picture"
+              className="person-picture anu-img"
               alt="Anuradha Indani"
             />
           </div>

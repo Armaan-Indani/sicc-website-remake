@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <body>
+      <div className="body-div">
         <FirstImpression />
         <Hero />
         <Message
@@ -22,7 +22,7 @@ function App() {
         <ParallaxDiv />
         <About />
         <Footer></Footer>
-      </body>
+      </div>
     </div>
   );
 }

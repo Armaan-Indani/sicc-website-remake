@@ -17,7 +17,16 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.body-div::-webkit-scrollbar {
+  display: none;
+}
+
 body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.body-div {
   height: 100vh;
   overflow-y: scroll;
   scroll-timeline: --squareTimeline y;
@@ -28,10 +37,9 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: rebeccapurple;
 }
 
-.fullwidth{
+.fullwidth {
   width: 100%;
   background-color: white;
 }

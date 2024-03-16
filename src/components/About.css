@@ -31,6 +31,26 @@ h1 {
   height: 20rem;
   width: 15rem;
   object-fit: cover;
+  opacity: 0;
+}
+
+.mital-img{
+  transform: translateX(100px);
+}
+
+.anu-img{
+  transform: translateX(-100px);
+}
+
+.shobha-img{
+  transform: translateX(-100px);
+}
+
+.person-picture.visible {
+  transform: translateX(0px);
+  opacity: 1;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.28, 0.61);
 }
 
 .img-holder {
