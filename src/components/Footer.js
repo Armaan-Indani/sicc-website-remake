@@ -19,7 +19,7 @@ export default function Footer() {
         <h3 style={{ marginBottom: "5px" }}>Email:</h3>
         <a
           href="mailto:shobhaindani@gmail.com"
-          style={{ textDecoration: "none" }}
+          style={{ textDecoration: "none", color: "white" }}
         >
           shobhaindani@gmail.com
         </a>

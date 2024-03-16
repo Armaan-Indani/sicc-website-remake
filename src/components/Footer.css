@@ -14,16 +14,16 @@
 
 .socials-images {
   display: flex;
-  width: 15rem;
+  width: 100%;
   justify-content: space-between;
 }
 
 .contact-logo {
   background-color: white;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   object-fit: scale-down;
   border-radius: 20%;
-  height: 3rem;
+  height: 2rem;
 }
 
 .youtube:hover {

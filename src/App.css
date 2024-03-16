@@ -23,6 +23,17 @@ body {
   scroll-timeline: --squareTimeline y;
   /* Firefox supports the older "vertical" syntax */
   scroll-timeline: --squareTimeline vertical;
+  scroll-behavior: smooth;
+  background-image: url("./assets/images/cooking-pan.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rebeccapurple;
+}
+
+.fullwidth{
+  width: 100%;
+  background-color: white;
 }
 
 .cooking-text-div {
@@ -84,7 +95,7 @@ body {
 }
 
 .parallax-div {
-  height: 70vh;
+  height: 50vh;
   /* box-shadow: 0px 0px 10px 10px inset white; */
 }
 
