@@ -6,6 +6,7 @@
   margin: 0%;
   height: max-content;
   background-color: white;
+
   scroll-timeline: --scrTimeline y;
   scroll-timeline: --scrTimeline vertical;
 }
@@ -13,18 +14,34 @@
 .heading {
   width: 100%;
   height: 6rem;
-  border-radius:10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
   background-color: black;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
 }
 
 h1 {
   font-size: 2rem;
+  font-family: "DM Serif Display", serif;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: "Lusitana", serif;
+  font-weight: 600;
+  font-style: normal;
+  /* font-size: 25px; */
+}
+
+p {
+  font-family: "Lusitana", serif;
   font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
 }
 
 .person-picture {
@@ -34,15 +51,15 @@ h1 {
   opacity: 0;
 }
 
-.mital-img{
+.mital-img {
   transform: translateX(100px);
 }
 
-.anu-img{
+.anu-img {
   transform: translateX(-100px);
 }
 
-.shobha-img{
+.shobha-img {
   transform: translateX(-100px);
 }
 
