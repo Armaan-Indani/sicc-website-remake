@@ -1,26 +1,26 @@
 .hero {
-    display: flex;
-    position: relative;
-    z-index: 1;
-    background-color: white;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    /* margin: 50px 100px; */
-    padding: 50px 100px;
-  }
-  
-  .hero img {
-    aspect-ratio: 1/1;
-    height: 20rem;
-    align-self: center;
-    object-fit: contain;
-    margin-right: 140px;
-  }
-  
-  .hero p {
-    font-family: "Merriweather", serif;
-    font-weight: 300;
-    font-style: italic;
-    font-size: larger;
-  }
+  display: flex;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  /* margin: 50px 100px; */
+  padding: 50px 100px;
+}
+
+.hero img {
+  aspect-ratio: 1 / 1;
+  height: 20vw;
+  align-self: center;
+  object-fit: contain;
+  margin-right: 3vw;
+}
+
+.hero p {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: larger;
+}

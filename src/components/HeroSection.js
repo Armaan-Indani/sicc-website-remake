@@ -7,7 +7,7 @@ export default function Hero() {
       <img
         src={sicc}
         alt=""
-        style={{ borderRadius: "80px", border: "5px solid black" }}
+        style={{ borderRadius: "3vw", border: ".5vw solid black" }}
       />
       <p>
         “Get ready to tantalize your taste buds, impress your loved ones, and
