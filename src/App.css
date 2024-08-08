@@ -62,6 +62,7 @@ body {
 .body-div {
   height: 100vh;
   overflow-y: scroll;
+  overflow-x: hidden;
   scroll-timeline: --squareTimeline y;
   /* Firefox supports the older "vertical" syntax */
   scroll-timeline: --squareTimeline vertical;
