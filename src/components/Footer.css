@@ -1,15 +1,39 @@
 .contact-section {
   position: relative;
   z-index: 1;
+  width: auto;
   background-color: black;
   height: max-content;
-  padding: 4rem;
+  padding: 2rem 5%;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
   font-size: larger;
   /* bottom: 0px; */
+}
+
+.contact-section .sicc-img {
+  aspect-ratio: 1 / 1;
+  height: 20vw;
+  max-height: 15rem;
+  min-height: 10rem;
+  border-radius: 10%;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-section {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 670px) {
+  .contact-section {
+    flex-direction: column;
+  }
+  .sicc-img {
+    display: none;
+    justify-content: space-around;
+  }
 }
 
 .socials-images {

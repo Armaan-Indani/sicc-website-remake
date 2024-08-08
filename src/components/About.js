@@ -54,7 +54,14 @@ export default function About() {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row row2">
+          <div className="img-holder">
+            <img
+              src={mitalimg}
+              className="person-picture mital-img"
+              alt="Mital Indani"
+            />
+          </div>
           <div className="info-div">
             <h3>MITAL INDANI </h3>
             <p>
@@ -67,13 +74,6 @@ export default function About() {
               ensuring a comprehensive and enriching learning experience
               throughout the course.
             </p>
-          </div>
-          <div className="img-holder">
-            <img
-              src={mitalimg}
-              className="person-picture mital-img"
-              alt="Mital Indani"
-            />
           </div>
         </div>
 

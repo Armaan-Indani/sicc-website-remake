@@ -6,8 +6,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  /* margin: 50px 100px; */
-  padding: 50px 100px;
+  padding: 50px 10%;
 }
 
 .hero img {
@@ -23,4 +22,20 @@
   font-weight: 300;
   font-style: italic;
   font-size: larger;
+}
+
+@media screen and (max-width: 760px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero img {
+    aspect-ratio: 1 / 1;
+    width: 50vw;
+    height: 50vw;
+    max-width: 170px;
+    max-height: 170px;
+  }
+  .hero p {
+    font-size: large;
+  }
 }

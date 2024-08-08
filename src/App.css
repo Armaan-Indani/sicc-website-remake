@@ -9,6 +9,39 @@
   }
 }
 
+@keyframes animatedBackground2 {
+  0% {
+    background-size: 125%;
+  }
+  40% {
+    background-size: 200%;
+    background-position: 50% 70%;
+    border-radius: 1rem;
+  }
+}
+
+@keyframes animatedBackground3 {
+  0% {
+    background-size: 200%;
+  }
+  20% {
+    background-size: 300%;
+    background-position: 50% 70%;
+    border-radius: 1rem;
+  }
+}
+
+@keyframes animatedBackground4 {
+  0% {
+    background-size: cover;
+  }
+  20% {
+    /* background-size: contain; */
+    background-position: 50% 70%;
+    border-radius: 1rem;
+  }
+}
+
 .App {
   text-align: center;
 }
@@ -48,25 +81,33 @@ body {
   height: calc(100vh - 2vw - 2rem);
   width: 98vw;
   margin: 0vw 1vw;
-  background-position: center;
-  background-size: cover;
-  background-image: url(./assets/images/cooking-board.jpg);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
-  animation-name: animatedBackground;
-  animation-timing-function: ease-out;
-  animation-duration: 1ms; /* Firefox requires this to apply the animation */
-  animation-timeline: --squareTimeline;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-image: url(./assets/images/cooking-board.jpg);
   z-index: -1;
+}
+
+
+.cooking-text-div p {
+  color: white;
+  margin-top: 2rem;
+  font-size: vw;
+  margin:2rem 10%;
+  font-family: "DM Serif Display", serif;
+  font-weight: 100;
+  letter-spacing: 0.2cap;
+  font-style: normal;
 }
 
 .cooking-text-div h1 {
   color: white;
-  margin: 0;
+  margin: 0 5%;
   font-size: 3rem;
   font-family: "DM Serif Display", serif;
   font-weight: 400;
@@ -74,15 +115,49 @@ body {
   font-style: normal;
 }
 
-.cooking-text-div p {
-  color: white;
-  margin-top: 2rem;
-  font-size: 1.1rem;
-  font-family: "DM Serif Display", serif;
-  font-weight: 100;
-  letter-spacing: 0.2cap;
-  font-style: normal;
+@media only screen and (min-width: 1055px) {
+  .cooking-text-div {
+    animation-name: animatedBackground;
+    animation-timing-function: ease-out;
+    animation-duration: 1ms;
+    animation-timeline: --squareTimeline;
+  }
 }
+
+@media only screen and (max-width: 1055px) and (min-width: 850px) {
+  .cooking-text-div {
+    animation-name: animatedBackground2;
+    animation-timing-function: ease-out;
+    animation-duration: 1ms;
+    animation-timeline: --squareTimeline;
+  }
+}
+
+@media only screen and (max-width: 850px) and (min-width: 540px) {
+  .cooking-text-div {
+    animation-name: animatedBackground3;
+    animation-timing-function: ease-out;
+    animation-duration: 1ms;
+    animation-timeline: --squareTimeline;
+  }
+  .cooking-text-div h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 540px){
+  .cooking-text-div {
+    animation-name: animatedBackground4;
+    animation-timing-function: ease-out;
+    animation-duration: 1ms;
+    animation-timeline: --squareTimeline;
+  }
+  .cooking-text-div h1 {
+    font-size: 2.5rem;
+  }
+}
+
+
 
 @keyframes parallaxAnimation {
   0% {

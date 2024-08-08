@@ -8,7 +8,7 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <div className="contact-section" id="contact-us">
-      <img src={sicc} alt="" height={"220rem"} />
+      <img src={sicc} alt="" className="sicc-img" />
       <div className="add-email">
         <h3 style={{ marginBottom: "5px" }}>ADDRESS:</h3>
         <p className="address">
